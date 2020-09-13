@@ -1,0 +1,70 @@
+/*-------Global styling-------*/
+:root {
+  --font-family-bold: 'Bold';
+  --font-family-medium: 'Medium';
+  --font-family-regular: 'Regular';
+  --color-gray: #dddddd;
+  --color-light-gray: #fbf9fe;
+  --color-text-primary: #222222;
+  --color-link-primary: #005da6;
+  --color-link-secondary: #004a84;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* default selection */
+::selection {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+::-moz-selection {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: var(--font-family-regular);
+  font-size: 16px;
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-light-gray);
+}
+
+/* Local styling */
+.centerx,
+.con-notifications,
+.con-notifications-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.page {
+  padding: 5rem 12rem;
+}
+.page h1 {
+  line-height: 52px;
+  margin-bottom: 12px;
+}

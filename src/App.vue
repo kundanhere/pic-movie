@@ -1,48 +1,55 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <Navbar />
+    <transition name="view">
+      <router-view />
+    </transition>
   </div>
 </template>
 
+<script>
+// @ is an alias to /src
+import Navbar from "@/components/Navbar";
+
+export default {
+  components: {
+    Navbar,
+  },
+};
+</script>
+
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+/* Page transition */
+.view-enter-active,
+view-leave-active {
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.view-enter-active {
+  transition-delay: 0.25s;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.view-enter {
+  opacity: 0;
+  transform: translate3d(0, -100px, 0);
 }
 
-.centerx,
-.con-notifications,
-.con-notifications-position {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+.view-enter-to {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.view-leave {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.view-leave-to {
+  opacity: 0;
+  transform: translate3d(0, 100px, 0);
 }
 </style>

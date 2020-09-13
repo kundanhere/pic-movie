@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Regular';
+  src: url('./AeonikRegular.eot');
+  src: url('./AeonikRegular.eot') format('embedded-opentype'),
+    url('./AeonikRegular.woff2') format('woff2'),
+    url('./AeonikRegular.woff') format('woff'),
+    url('./AeonikRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Medium';
+  src: url('./AeonikMedium.eot');
+  src: url('./AeonikMedium.eot') format('embedded-opentype'),
+    url('./AeonikMedium.woff2') format('woff2'),
+    url('./AeonikMedium.woff') format('woff'),
+    url('./AeonikMedium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bold';
+  src: url('./AeonikBold.eot');
+  src: url('./AeonikBold.eot') format('embedded-opentype'),
+    url('./AeonikBold.woff2') format('woff2'),
+    url('./AeonikBold.woff') format('woff'),
+    url('./AeonikBold.ttf') format('truetype');
+}

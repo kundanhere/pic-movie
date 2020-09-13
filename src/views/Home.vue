@@ -1,18 +1,12 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld />
+  <div class="home page">
+    <h1>This is an home page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam excepturi, itaque voluptate, explicabo, temporibus doloremque perspiciatis maxime deleniti libero enim praesentium illo. Deleniti sint optio vero, dolor eaque nam facere corrupti laborum. Voluptatem maxime aliquam incidunt laudantium, suscipit adipisci odit?</p>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld,
-  },
 };
 </script>
