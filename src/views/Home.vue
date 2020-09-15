@@ -1,17 +1,19 @@
 <template>
-  <div class="home">
+  <div class="home container">
     <HomeSlider />
-    <h1>This is an home page</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam excepturi, itaque voluptate, explicabo, temporibus doloremque perspiciatis maxime deleniti libero enim praesentium illo. Deleniti sint optio vero, dolor eaque nam facere corrupti laborum. Voluptatem maxime aliquam incidunt laudantium, suscipit adipisci odit?</p>
+    <MovieSlider />
   </div>
 </template>
 
 <script>
 import HomeSlider from "@/components/HomeSlider";
+import MovieSlider from "@/components/MovieSlider";
+
 export default {
   name: "Home",
   components: {
     HomeSlider,
+    MovieSlider,
   },
 };
 </script>

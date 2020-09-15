@@ -68,3 +68,92 @@ body {
   line-height: 52px;
   margin-bottom: 12px;
 }
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.text__center {
+  text-align: center;
+}
+
+/*-------Typography-------*/
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.p {
+  font-family: var(--font-family-bold);
+  color: var(--color-primary);
+  overflow: hidden;
+}
+
+.h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+  margin-bottom: 18vmin;
+}
+
+.h2 {
+  font-size: 4.125rem;
+  line-height: 5.375rem;
+  margin-bottom: 16vmin;
+}
+
+.h3 {
+  font-size: 3.125rem;
+  line-height: 4.313rem;
+  margin-bottom: 8vmin;
+}
+
+.h4 {
+  font-size: 1.625rem;
+  line-height: 2.5rem;
+  margin-bottom: 4vmin;
+}
+
+.h5 {
+  font-size: 1.125rem;
+  line-height: 1.733rem;
+  margin-bottom: 2vmin;
+}
+
+.h6 {
+  font-size: 1rem;
+  line-height: 1.54rem;
+  margin-bottom: 1vmin;
+}
+
+.p {
+  font-family: var(--font-family-regular);
+  font-size: 1.625rem;
+  line-height: 2.5rem;
+  margin-bottom: 4vmin;
+}
+
+/* Owl carousel */
+
+.owl-carousel {
+  text-align: center; /* center align owl-nav-dots */
+}
+.owl-carousel .owl-stage-outer {
+  overflow: visible; /* fix shadow visibility */
+  padding-bottom: 20px;
+}
+.owl-theme .owl-dots {
+  display: inline-flex;
+  align-items: center;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transition: all 0.25s ease, background 0.25s ease-in;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  width: 10px;
+  height: 10px;
+}

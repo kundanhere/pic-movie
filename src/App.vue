@@ -19,10 +19,6 @@ export default {
 </script>
 
 <style>
-#app {
-  text-align: center;
-}
-
 /* Page transition */
 .view-enter-active,
 view-leave-active {

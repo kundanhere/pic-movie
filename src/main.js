@@ -9,6 +9,7 @@ import 'material-icons/iconfont/material-icons.css';
 
 // custom css
 import './assets/font/Aeonik/style.css';
+import 'line-awesome/dist/line-awesome/css/line-awesome.min.css';
 import './assets/styles/main.css';
 
 Vue.config.productionTip = false;
