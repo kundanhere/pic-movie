@@ -8,6 +8,7 @@
   --color-text-primary: #222222;
   --color-link-primary: #005da6;
   --color-link-secondary: #004a84;
+  --nav-button: #3e4241;
 }
 
 *,
@@ -78,6 +79,11 @@ body {
   text-align: center;
 }
 
+.mx-t {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 /*-------Typography-------*/
 .h1,
 .h2,
@@ -133,7 +139,16 @@ body {
   line-height: 2.5rem;
   margin-bottom: 4vmin;
 }
-
+@media only screen and (max-width: 480px) {
+  .h4 {
+    font-size: 1.24rem;
+    line-height: 2.5rem;
+    margin-bottom: 2vmin;
+  }
+  .h6 {
+    font-size: 0.89rem !important;
+  }
+}
 /* Owl carousel */
 
 .owl-carousel {
@@ -156,4 +171,7 @@ body {
 .owl-theme .owl-dots .owl-dot.active span {
   width: 10px;
   height: 10px;
+}
+.vs-con-table .vs-table--tbody-table {
+  min-width: 280px !important;
 }
