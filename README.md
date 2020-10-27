@@ -1,23 +1,19 @@
-# vue-picmovie
+# PicMovie: Vue.js
 
-## Project setup
-```
-npm install
-```
+## Build Setup
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+```bash
+# install dependencies
+$ npm install
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# serve with hot-reloads for development at localhost:8080/
+$ npm run serve
 
-### Lints and fixes files
-```
-npm run lint
+# compiles and minifies for production
+$ npm run build
+
+# lints and fixes files
+$ npm run lint
 ```
 
 ### Customize configuration
